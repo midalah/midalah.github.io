@@ -1389,3 +1389,93 @@ footer {
     max-width: 100%;
   }
 }
+/* =========================================
+   JEONG STAY PRODUCT STRATEGY
+========================================= */
+
+.product-roadmap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.roadmap-card {
+  padding: 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.roadmap-card > span {
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.roadmap-card h3 {
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+
+.roadmap-card p:not(.project-type) {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.product-principle {
+  max-width: 850px;
+  margin: 4rem auto 0;
+  padding: 3rem;
+  text-align: center;
+
+  background: var(--accent);
+  color: white;
+
+  border-radius: 22px;
+}
+
+.product-principle .section-label {
+  color: var(--accent-soft);
+}
+
+.product-principle blockquote {
+  margin: 1.5rem 0;
+
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.product-principle > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media (max-width: 900px) {
+
+  .product-roadmap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .product-roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .product-principle {
+    padding: 2rem 1.5rem;
+  }
+
+}
