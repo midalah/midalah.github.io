@@ -1179,3 +1179,23 @@ footer {
   padding: 1.25rem;
   background: white;
 }
+/* JEONG STAY */
+
+.jeong-problem-grid,
+.jeong-audience-grid {
+  margin-top: 4rem;
+}
+
+.jeong-problem-grid {
+  background: transparent;
+}
+
+.jeong-problem-grid > div {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.jeong-problem-grid p {
+  color: var(--muted);
+}
