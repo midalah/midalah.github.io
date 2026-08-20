@@ -1619,3 +1619,55 @@ footer {
   }
 
 }
+/* =========================================
+   SOCIAL MEDIA TOOLS
+========================================= */
+
+.social-tools-section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.tools-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.tool-category {
+  padding: 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.tool-category h3 {
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.tool-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.tool-pills span {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+
+  .tools-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
