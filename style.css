@@ -1297,3 +1297,27 @@ footer {
   }
 
 }
+/* =========================================
+   JEONG STAY GTM STRATEGY
+========================================= */
+
+.strategy-visual {
+  max-width: 1050px;
+  margin: 4rem auto 0;
+  padding: 1rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.strategy-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.jeong-gtm-flow {
+  margin-top: 3rem;
+}
