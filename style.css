@@ -985,3 +985,58 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* F&M IMPACT SNAPSHOT */
+
+.fm-impact-snapshot {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.fm-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fm-impact-item {
+  padding: 2.4rem 2rem;
+  border-right: 1px solid var(--border);
+}
+
+.fm-impact-item:last-child {
+  border-right: none;
+}
+
+.fm-impact-item strong {
+  display: block;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.fm-impact-item span {
+  display: block;
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .fm-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fm-impact-item {
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 600px) {
+  .fm-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fm-impact-item {
+    border-right: none;
+  }
+}
