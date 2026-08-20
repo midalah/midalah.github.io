@@ -1199,3 +1199,101 @@ footer {
 .jeong-problem-grid p {
   color: var(--muted);
 }
+/* =========================================
+   JEONG STAY VISUAL HERO
+========================================= */
+
+.jeong-hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  grid-template-rows: repeat(3, 150px);
+  gap: 0.8rem;
+
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.jeong-hero-grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+
+  border-radius: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.jeong-hero-feature {
+  grid-row: 1 / 4;
+}
+
+.jeong-hero-grid img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+.jeong-hero-grid figure:hover img {
+  transform: scale(1.02);
+}
+
+.jeong-hero-grid figcaption {
+  position: absolute;
+
+  left: 0.75rem;
+  bottom: 0.75rem;
+
+  padding: 0.45rem 0.7rem;
+
+  background: rgba(20, 20, 20, 0.76);
+  color: white;
+
+  border-radius: 999px;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  backdrop-filter: blur(6px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+  .jeong-hero-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 170px;
+  }
+
+  .jeong-hero-feature {
+    grid-column: 1 / 4;
+    grid-row: auto;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .jeong-hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 260px 150px 150px;
+  }
+
+  .jeong-hero-feature {
+    grid-column: 1 / 3;
+  }
+
+  .jeong-hero-grid figure:last-child {
+    grid-column: 1 / 3;
+  }
+
+}
