@@ -1485,3 +1485,56 @@ footer {
   color: var(--muted);
   font-size: 1rem;
 }
+/* =========================================
+   SOCIAL MEDIA CASE STUDY
+========================================= */
+
+.social-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+
+.social-feature-grid figure {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.social-feature-grid img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+
+  .social-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-feature-grid figure:first-child {
+    grid-column: 1 / 3;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .social-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-feature-grid figure:first-child {
+    grid-column: auto;
+  }
+
+  .social-feature-grid img {
+    height: 300px;
+  }
+
+}
