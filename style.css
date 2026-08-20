@@ -1064,3 +1064,108 @@ footer {
     padding-bottom: 7rem;
   }
 }
+/* =========================================
+   F&M HERO COLLAGE
+========================================= */
+
+.case-visual-hero {
+  padding: 0 0 6rem;
+}
+
+.hero-collage {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: repeat(2, 280px);
+  gap: 1rem;
+}
+
+.hero-collage figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 20px;
+  background: var(--card);
+}
+
+.collage-feature {
+  grid-row: 1 / 3;
+}
+
+.hero-collage img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hero-collage figure:hover img {
+  transform: scale(1.025);
+}
+
+.hero-collage figcaption {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+
+  max-width: calc(100% - 2rem);
+
+  padding: 0.55rem 0.8rem;
+
+  background: rgba(20, 20, 20, 0.78);
+  color: white;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+  .hero-collage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 250px 250px;
+  }
+
+  .collage-feature {
+    grid-column: 1 / 3;
+    grid-row: auto;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .case-visual-hero {
+    padding-bottom: 4rem;
+  }
+
+  .hero-collage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .collage-feature {
+    grid-column: auto;
+  }
+
+  .hero-collage figure {
+    height: 260px;
+  }
+
+  .hero-collage .collage-feature {
+    height: 360px;
+  }
+
+}
