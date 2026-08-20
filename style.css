@@ -1321,3 +1321,71 @@ footer {
 .jeong-gtm-flow {
   margin-top: 3rem;
 }
+/* =========================================
+   JEONG STAY EARLY VALIDATION
+========================================= */
+
+.validation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.validation-stat {
+  padding: 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.validation-stat strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.validation-stat span {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.validation-visual {
+  max-width: 760px;
+  margin: 3rem auto 0;
+  padding: 0.75rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.validation-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.validation-learning {
+  margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+  .validation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .validation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .validation-visual {
+    max-width: 100%;
+  }
+}
