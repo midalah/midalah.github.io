@@ -433,3 +433,451 @@ footer {
     align-items: center;
   }
 }
+/* =========================================
+   CASE STUDY PAGES
+========================================= */
+
+.case-hero {
+  padding: 7rem 0 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.case-hero h1 {
+  margin-top: 1rem;
+  font-size: clamp(4rem, 9vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.case-subtitle {
+  margin-top: 1rem;
+  font-size: clamp(1.7rem, 4vw, 3rem);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.case-intro {
+  max-width: 700px;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.case-two-column {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 5rem;
+}
+
+.case-copy p {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+
+.case-copy .large-copy {
+  font-size: 1.55rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+/* ROLE */
+
+.case-role {
+  border-top: 1px solid var(--border);
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.role-grid > div {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.role-grid h3 {
+  font-size: 1.2rem;
+}
+
+.role-grid p {
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+/* CAMPAIGNS */
+
+.campaign-section {
+  border-top: 1px solid var(--border);
+}
+
+.alternate-section {
+  background: var(--card);
+}
+
+.campaign-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: flex-end;
+}
+
+.campaign-heading h2 {
+  max-width: 760px;
+}
+
+.campaign-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.campaign-tags span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.campaign-story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.campaign-story-grid h3 {
+  font-size: 1.4rem;
+}
+
+.campaign-story-grid p {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+/* IMPACT CALLOUT */
+
+.impact-callout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2.5rem;
+  border-radius: 22px;
+  background: var(--accent);
+  color: white;
+}
+
+.impact-number {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  line-height: 1;
+  font-weight: 800;
+}
+
+.impact-callout strong {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.impact-callout p {
+  margin-top: 0.4rem;
+  color: rgba(255,255,255,0.75);
+}
+
+/* PORTFOLIO GALLERY */
+
+.portfolio-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.portfolio-gallery-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-gallery figure {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.portfolio-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.portfolio-gallery figcaption {
+  padding: 0.8rem 0.2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* CAMPAIGN FLOW */
+
+.campaign-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.flow-item {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.flow-item span {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.flow-item h3 {
+  margin-top: 0.8rem;
+}
+
+.flow-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--muted);
+}
+
+.case-note {
+  max-width: 800px;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* EXPERIENTIAL GRID */
+
+.section-intro-text {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.experience-card {
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.experience-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.experience-content {
+  padding: 2rem;
+}
+
+.experience-content h3 {
+  margin-top: 0.7rem;
+  font-size: 1.8rem;
+}
+
+.experience-content p:not(.project-type) {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+/* PROCESS */
+
+.process-section {
+  background: var(--accent);
+  color: white;
+}
+
+.process-section .section-label {
+  color: var(--accent-soft);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 4rem;
+  background: rgba(255,255,255,0.2);
+}
+
+.process-grid > div {
+  padding: 2rem;
+  background: var(--accent);
+}
+
+.process-grid span {
+  font-size: 0.75rem;
+  color: var(--accent-soft);
+}
+
+.process-grid h3 {
+  margin-top: 0.8rem;
+}
+
+.process-grid p {
+  margin-top: 0.8rem;
+  color: rgba(255,255,255,0.72);
+}
+
+/* SELECTED IMPACT */
+
+.selected-impact {
+  border-top: 1px solid var(--border);
+}
+
+.case-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.case-impact-grid > div {
+  padding: 2rem;
+  border-right: 1px solid var(--border);
+}
+
+.case-impact-grid > div:last-child {
+  border-right: none;
+}
+
+.case-impact-grid strong {
+  display: block;
+  font-size: 2rem;
+}
+
+.case-impact-grid span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* NEXT PROJECT */
+
+.next-project {
+  text-align: center;
+}
+
+.next-project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+/* RESPONSIVE CASE STUDIES */
+
+@media (max-width: 900px) {
+
+  .case-two-column {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .role-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .campaign-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .campaign-tags {
+    justify-content: flex-start;
+  }
+
+  .campaign-flow {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    justify-content: center;
+  }
+
+  .portfolio-gallery-three {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .case-hero {
+    padding: 5rem 0 4rem;
+  }
+
+  .role-grid,
+  .campaign-story-grid,
+  .process-grid,
+  .case-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .case-impact-grid > div {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+}
