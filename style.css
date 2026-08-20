@@ -1671,3 +1671,89 @@ footer {
   }
 
 }
+/* =========================================
+   K-PAWP SOCIAL CREATIVE
+========================================= */
+
+.project-subsection {
+  margin-top: 5rem;
+}
+
+.subsection-heading {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.subsection-heading h3 {
+  margin: 0.6rem 0 1rem;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.subsection-heading p:last-child {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.kpawp-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.kpawp-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.kpawp-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.kpawp-gallery figure:hover img {
+  transform: scale(1.025);
+}
+
+.kpawp-gallery figcaption {
+  padding: 0.9rem 1rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.kpawp-process {
+  margin-top: 4rem;
+}
+
+.project-takeaway {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding: 2.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.takeaway-copy {
+  margin-top: 0.8rem;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.55;
+}
+
+@media (max-width: 850px) {
+  .kpawp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .kpawp-gallery {
+    grid-template-columns: 1fr;
+  }
+}
