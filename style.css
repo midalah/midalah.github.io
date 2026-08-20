@@ -1174,3 +1174,8 @@ footer {
   }
 
 }
+.brand-card img {
+  object-fit: contain;
+  padding: 1.25rem;
+  background: white;
+}
