@@ -1836,3 +1836,60 @@ footer {
     width: min(100%, 230px);
   }
 }
+/* =========================================
+   SOCIAL MEDIA SUMMARY
+========================================= */
+
+.social-summary-section {
+  border-top: 1px solid var(--border);
+}
+
+.social-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+
+.social-summary-grid article {
+  padding: 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.social-summary-grid article > span {
+  display: block;
+  margin-bottom: 1.5rem;
+
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.social-summary-grid h3 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.social-summary-grid p {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+
+  .social-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .social-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
