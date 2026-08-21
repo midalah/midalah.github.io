@@ -1893,3 +1893,76 @@ footer {
   }
 
 }
+/* =========================================
+   AI MARKETING CASE STUDY
+========================================= */
+
+.ai-workflow {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.ai-workflow > div:not(.flow-arrow) {
+  flex: 1;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.ai-workflow span {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.ai-workflow h3 {
+  margin-top: 0.75rem;
+}
+
+.ai-workflow p {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ai-creative-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 950px;
+  margin: 4rem auto 0;
+}
+
+.ai-creative-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+@media (max-width: 900px) {
+
+  .ai-workflow {
+    flex-direction: column;
+  }
+
+  .ai-workflow .flow-arrow {
+    transform: rotate(90deg);
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .ai-creative-gallery {
+    grid-template-columns: 1fr;
+  }
+
+}
