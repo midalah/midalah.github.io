@@ -1966,3 +1966,61 @@ footer {
   }
 
 }
+/* =========================================
+   HOMEPAGE PROJECT POLISH
+========================================= */
+
+.project-mini-impact {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-mini-impact strong {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.project-mini-impact span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.project-coming-soon {
+  margin-top: auto;
+  padding-top: 2rem;
+
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.featured-project-card {
+  position: relative;
+}
+
+.featured-project-card::after {
+  content: "CASE STUDY";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  padding: 0.35rem 0.55rem;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.future-project-card {
+  opacity: 0.82;
+}
