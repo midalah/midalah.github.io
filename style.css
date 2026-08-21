@@ -2024,3 +2024,70 @@ footer {
 .future-project-card {
   opacity: 0.82;
 }
+/* =========================================
+   CREATIVE & VISUAL DESIGN
+========================================= */
+
+.design-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.design-gallery-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.design-gallery-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.design-gallery figure {
+  margin: 0;
+  overflow: hidden;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.design-gallery img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: white;
+  padding: 0.75rem;
+}
+
+.design-gallery figcaption {
+  padding: 0.9rem 1rem;
+
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+
+  .design-gallery-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .design-gallery-two,
+  .design-gallery-three {
+    grid-template-columns: 1fr;
+  }
+
+  .design-gallery img {
+    height: auto;
+    max-height: 420px;
+  }
+
+}
